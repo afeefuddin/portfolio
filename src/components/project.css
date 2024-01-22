@@ -1,0 +1,29 @@
+.project{
+    width: 700px;
+    height: 300px;
+    /* background: hsl(240, 1%, 52%); */
+}
+.projectImage {
+    width: 400px;
+    transition: all .4s ease;
+}
+.projectImage:hover{
+    width: 420px;
+    
+}
+.projectImage:hover  .backgroundImage{
+    width: 520px;
+}
+.backgroundImage{
+    background: hsl(var(--primary));
+    width: 500px;
+    transition: all .4s ease;
+
+}
+.projectName{
+    color: white;
+    font-size: 2rem;
+}
+/* .backgroundImage:hover{
+    width: 520px;
+} */

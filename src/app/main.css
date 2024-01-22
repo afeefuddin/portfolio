@@ -1,0 +1,17 @@
+.coloredText{
+    color: hsl(var(--primary));
+}
+.arrow{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    rotate: 180deg;
+    /* position: absolute; */
+    top: 20px;
+    height: 300px;
+}
+.arrow-2{
+    rotate: 180deg;
+    /* position: absolute; */
+    top: 20px;
+    height: 300px;
+}
