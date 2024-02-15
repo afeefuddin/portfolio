@@ -12,13 +12,13 @@ export interface ProjectData {
     projectDescription1?: string
     projectDescription2?: string
     projectDescription3?: string
-    githubLink : string;
-    liveURL? : string;
+    githubLink: string;
+    liveURL?: string;
 }
 
 function Project(props: ProjectData) {
     return (
-        
+
         <div className='flex flex-row-reverse border project justify-between pl-2'>
             <div className='overflow-hidden relative projectImage'>
                 <div className=' absolute max-w-max -bottom-4 -rotate-2  transition left-2 backgroundImage flex justify-center items-center pt-2 pb-2  pl-2 pr-2 rounded'>
@@ -45,7 +45,7 @@ function Project(props: ProjectData) {
                         </ul>
                     </div>
                 </div>
-                <div className='mb-4 ml-4 flex flex-row gap-4'><Link href={props?.githubLink} target='_blank' ><GitHubLogoIcon className='h-8 w-8' /> </Link>{props.liveURL &&  <Link href={props.liveURL} target='_blank'><Link1Icon className='h-8 w-8' /> </Link>}</div>
+                <div className='mb-4 ml-4 flex flex-row gap-4'><Link href={props?.githubLink} target='_blank' ><GitHubLogoIcon className='h-8 w-8' /> </Link>{props.liveURL && <Link href={props.liveURL} target='_blank'><Link1Icon className='h-8 w-8' /> </Link>}</div>
             </div>
         </div>
     )

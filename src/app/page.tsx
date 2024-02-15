@@ -57,34 +57,34 @@ export default function Home() {
           <div className='text-4xl '>Projects</div>
           <div className=''>
 
-          <div className='h-[60vh] sticky top-24'><Project projectName='Memomedia' image='/ss.png' projectDescription1="
+            <div className='h-[60vh] sticky top-24'><Project projectName='Memomedia' image='/ss.png' projectDescription1="
           A full stack Social Media Website to share memes"
-          projectDescription2="Implemented a microservice for OTP verification on signup"
-          githubLink='https://github.com/afeefuddin/memomedia'
-          />
-          </div>
-          <div className='h-[60vh] sticky top-36 '><Project projectName='MindMate' image='/mindmate.png' projectDescription1="A Mental health chatbot that give suggestions and analyse your mental health"
-            projectDescription2="Implemented WebSockets For Real Time Communication"
-            githubLink='https://github.com/afeefuddin/MindMate'
-            liveURL='https://mind-mate-wellness.vercel.app/' />
-          </div>
-          <div className='h-[60vh] sticky top-48'>
-            <Project projectName='RagFreeCampus' image='/ragfreecampus.png' projectDescription1="
+              projectDescription2="Implemented a microservice for OTP verification on signup"
+              githubLink='https://github.com/afeefuddin/memomedia'
+            />
+            </div>
+            <div className='h-[60vh] sticky top-36 '><Project projectName='MindMate' image='/mindmate.png' projectDescription1="A Mental health chatbot that give suggestions and analyse your mental health"
+              projectDescription2="Implemented WebSockets For Real Time Communication"
+              githubLink='https://github.com/afeefuddin/MindMate'
+              liveURL='https://mind-mate-wellness.vercel.app/' />
+            </div>
+            <div className='h-[60vh] sticky top-48'>
+              <Project projectName='RagFreeCampus' image='/ragfreecampus.png' projectDescription1="
              A website to report ragging Incidents.       
              "
-            projectDescription2="Dedicated Teacher’s and Students Portal for Addressing Incidents"
-            githubLink='https://github.com/afeefuddin/RagFreeCampus'
-            liveURL='https://ragfreecampus.web.app/'
-            /></div>
-          <div className='h-[60vh] sticky top-52'>
-            <Project projectName='ASRS' image='/ss.png' projectDescription1="It's a fun project made by me"
-             projectDescription2='Has feature like real dictionary, facts and articles'
-             githubLink='https://github.com/afeefuddin/asrs'
-             liveURL='https://asrs.vercel.app/' />
-          </div>
+                projectDescription2="Dedicated Teacher’s and Students Portal for Addressing Incidents"
+                githubLink='https://github.com/afeefuddin/RagFreeCampus'
+                liveURL='https://ragfreecampus.web.app/'
+              /></div>
+            <div className='h-[60vh] sticky top-52'>
+              <Project projectName='ASRS' image='/ss.png' projectDescription1="It's a fun project made by me"
+                projectDescription2='Has feature like real dictionary, facts and articles'
+                githubLink='https://github.com/afeefuddin/asrs'
+                liveURL='https://asrs.vercel.app/' />
+            </div>
 
+          </div>
         </div>
-      </div>
       </section>
       <section id='blogs'>
         <section className='mt-24'  >
@@ -115,19 +115,19 @@ export default function Home() {
         <div className='flex flex-row gap-6 items-center'>
           {/* <img src="/x.svg" alt="" className='h-9' /> */}
           <Link href="https://twitter.com/Afeefuddin2004" target='_blank'>
-          <XIcon className="h-9 w-9" />
+            <XIcon className="h-9 w-9" />
           </Link>
           {/* <img src="/instagram.svg" alt="" className='h-10' /> */}
           <Link href="https://www.instagram.com/afeef_explores/" target='_blank'>
-          <InstaIcon className="h-10 w-10" />
+            <InstaIcon className="h-10 w-10" />
           </Link>
           {/* <img src="/linkedin.svg" alt="" className='h-12' /> */}
           <Link href="https://www.linkedin.com/in/afeef-uddin-2ab567247/" target='_blank'>
-          <LinkedInIcon className="h-12 w-12" />
+            <LinkedInIcon className="h-12 w-12" />
           </Link>
           {/* <DiscordIcon className="h-10 w-11" /> */}
           <Link href="https://github.com/afeefuddin" passHref={true} target='_blank' >
-          <GithubIcon className= "h-9 w-9" />
+            <GithubIcon className="h-9 w-9" />
           </Link>
         </div>
         <div><Link href={`yesitchanges`}>© {d.getFullYear()}</Link> Afeefuddin</div>
