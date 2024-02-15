@@ -49,7 +49,7 @@ function Skills() {
         setArr(temp)
     }, [tab])
     return (
-        <div className='flex flex-col justify-center items-center gap-12'>
+        <div className='flex flex-col items-center gap-12 min-h-96'>
             <div className='flex flex-row gap-4'>
                 <Button variant={`${tab === 'all' ? 'secondary' : 'ghost'}`} onClick={() => setTab('all')}>All</Button>
                 <Button variant={`${tab === 'frontend' ? 'secondary' : 'ghost'}`} onClick={() => setTab('frontend')}>Frontend</Button>

@@ -15,3 +15,9 @@
   top: 20px;
   height: 300px;
 }
+.disclaimer{
+  background: hsl(var(--primary));
+  margin: 0;
+  color: black;
+  padding: 4px;
+}

@@ -1,0 +1,10 @@
+.navitem{
+}
+.navitem:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.navitem .active{
+    text-decoration: underline;
+    font-weight: bold;
+}

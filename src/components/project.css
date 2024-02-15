@@ -1,7 +1,7 @@
 .project{
     width: 700px;
     height: 300px;
-    /* background: hsl(240, 1%, 52%); */
+    background: hsl( 240 10% 3.9%);
 }
 .projectImage {
     width: 400px;
@@ -23,6 +23,9 @@
 .projectName{
     color: white;
     font-size: 2rem;
+    font-weight: 600;
+    color: hsl(var(--primary));
+    opacity: 0.9;
 }
 /* .backgroundImage:hover{
     width: 520px;
