@@ -24,22 +24,20 @@ export default function Home() {
     <>
       <section className='min-h-screen' id='home' >
         <header className='flex flex-row justify-center p-8 pt-12'>
-          {/* <Navbar /> */}
-          <div className='w-full flex flex-row justify-between'>
-            <img src='/photo.jpg' alt="me" width="64" height="64" className='rounded-full' />
-            {/* <img src="/github.svg" alt="" className='h-12' /> */}
-            <div>
-              <GithubIcon className='h-12 w-12' />
 
+          <div className='w-full flex flex-row-reverse'>
+            <div>
+              <a href="https://github.com/afeefuddin/" target='_blank'>
+                <GithubIcon className='h-12 w-12' />
+              </a>
             </div>
           </div>
 
         </header>
         <main className="flex flex-col items-center justify-between p-12 pt-24 gap-10 " >
-
-          <div className='text-8xl '>Hi,  I am  <span className='coloredText'>Afeef</span></div>
-          <div className='text-4xl'>Full stack Developer</div>
-          <Button className='h-12 w-40 text-lg '>Get in Touch</Button>
+          <div className='text-5xl md:text-8xl '>Hi,  I am  <span className='coloredText'>Afeef</span></div>
+          <div className='text-xl md:text-4xl'>Full stack Developer</div>
+          <Button className='h-12 w-40 text-lg ' asChild><a href="https://twitter.com/Afeefuddin2004" target='_blank'>Get In Touch</a></Button>
         </main>
       </section>
       <section id="about">
@@ -56,7 +54,6 @@ export default function Home() {
 
           <div className='text-4xl '>Projects</div>
           <div className=''>
-
             <div className='h-[60vh] sticky top-24'><Project projectName='Memomedia' image='/ss.png' projectDescription1="
           A full stack Social Media Website to share memes"
               projectDescription2="Implemented a microservice for OTP verification on signup"
@@ -76,7 +73,7 @@ export default function Home() {
                 githubLink='https://github.com/afeefuddin/RagFreeCampus'
                 liveURL='https://ragfreecampus.web.app/'
               /></div>
-            <div className='h-[60vh] sticky top-52'>
+            <div className='h-[60vh] md:h-[60vh] sticky top-52'>
               <Project projectName='ASRS' image='/ss.png' projectDescription1="It's a fun project made by me"
                 projectDescription2='Has feature like real dictionary, facts and articles'
                 githubLink='https://github.com/afeefuddin/asrs'
@@ -86,31 +83,15 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id='blogs'>
-        <section className='mt-24'  >
-          <div className='grid grid-cols-2 gap-4'>
-            <div className='text-4xl ml-auto'>I Write Blogs Here</div>
-            <div className='flex flex-col'>
-              <div><img src="/arrow.png" alt="" className='arrow' /></div>
-              <div className='h-[300px] w-[300px] absolute'></div>
-              <div className='relative'><Button className='absolute left-44 h-12 w-40 text-2xl' asChild><a href="https://afeefexplores.hashnode.dev/">Read</a></Button></div>
-            </div>
-          </div>
-        </section>
-        <section className='mt-24' id=''>
-          <div className='grid grid-cols-2 gap-4'>
-            <div className='flex flex-col ml-auto'>
-              <div><img src="/arrow.png" alt="" className='arrow-2' /></div>
-              <div className='h-[300px] w-[300px] absolute'></div>
-              <div className='relative '><Button className='absolute -left-12 h-12 w-40 text-2xl' asChild><Link href={'/fun'}>Go Here</Link></Button></div>
-            </div>
-            <div className='text-4xl mr-auto'>For Fun stuff</div>
-          </div>
-        </section>
 
+      <section className=' flex flex-col items-center gap-6'>
+        <h1 className='text-4xl'>Other <span className='coloredText'>Stuffs</span></h1>
+        <div>
+          <div>I write blogs <a className=' underline' href='https://afeefexplores.hashnode.dev/' target='_blank'>here</a></div>
+        </div>
       </section>
       <section className='mt-36 flex flex-col items-center gap-6' id='contact'>
-        <div className='text-4xl'>Contact Me</div>
+        <div className='text-4xl'>Contact <span className='coloredText'>Me</span></div>
         <div>hi, drop a mail at <span className='underline'>afeefud2004din@gmail.com</span> or reach out here</div>
         <div className='flex flex-row gap-6 items-center'>
           {/* <img src="/x.svg" alt="" className='h-9' /> */}

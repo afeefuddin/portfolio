@@ -8,36 +8,24 @@ function About() {
     <div className='flex justify-center items-center flex-col gap-12 mb-6'>
       <div className='text-4xl'>About <span className='coloredText'>Me</span></div>
       <div className='grid grid-cols-3 w-full'>
-        <div className='col-span-2 flex flex-col gap-2'>
-          <div className='text-4xl'>I am a Full Stack developer from Kolkata, India.</div>
-          <div className='flex flex-row gap-2 items-center text-lg'>
+        <div className='col-span-3 lg:col-span-2 flex flex-col gap-4 mt-auto mb-auto'>
+          <div className='text-2xl lg:text-4xl'>I am a Full Stack developer from Kolkata, India.</div>
+          <div className='flex flex-row gap-2 items-center '>
             <div ><ChevronRightIcon className='w-5 h-5' /></div>
             <div>
-              I have 1+ year experience in web developement and have made several projects
+              I have <span className='coloredText'>1+ year experience</span> in web developement and have made several projects
+            </div>
+          </div>
+          <div className='flex flex-row gap-2 items-center '>
+            <div ><ChevronRightIcon className='w-5 h-5' /></div>
+            <div>
+              I like to <span className='coloredText'>build projects</span> and <span className='coloredText'>learn by doing</span>
             </div>
           </div>
           <div className='flex flex-row gap-2 items-center'>
             <div ><ChevronRightIcon className='w-5 h-5' /></div>
             <div>
-              I do competitive programming for fun
-            </div>
-          </div>
-          <div className='flex flex-row gap-2 items-center'>
-            <div ><ChevronRightIcon className='w-5 h-5' /></div>
-            <div>
-              Aritificial Intelligence is what exictes me and I run away from Machine Learning
-            </div>
-          </div>
-          <div className='flex flex-row gap-2 items-center'>
-            <div ><ChevronRightIcon className='w-5 h-5' /></div>
-            <div>
-              I do DSA because seniors told me to do that
-            </div>
-          </div>
-          <div className='flex flex-row gap-2 items-center'>
-            <div ><ChevronRightIcon className='w-5 h-5' /></div>
-            <div>
-              Love Practical Applications of things and hates theory
+              I do <span className='coloredText'>competitive programming</span> for fun
             </div>
           </div>
           <div className='flex flex-row gap-2 items-center'>
@@ -59,10 +47,10 @@ function About() {
             </div>
           </div>
           <div className='mt-4'>
-            <Button variant="outline" >View Resume</Button>
+            <a href="https://drive.google.com/file/d/1puo3xgF5ypeNDvrgFgN62KK83Adx6xhR/view?usp=sharing" target='_blank'><Button variant="outline"  > View Resume</Button></a>
           </div>
         </div>
-        <div className='flex justify-center items-center'><Image src={'/aboutPicE.jpeg'} className='rounded' sizes='(max-width:80%),' priority alt='Pic' width='381' height='615' placeholder='blur' quality={100} blurDataURL='/aboutPic.jpeg'></Image></div>
+        <div className='hidden justify-center items-center  lg:flex'><Image src={'/aboutPicE.jpeg'} className='rounded' sizes='(max-width:80%),' priority alt='Pic' width='381' height='615' placeholder='blur' quality={100} blurDataURL='/aboutPic.jpeg'></Image></div>
       </div>
     </div>
   )

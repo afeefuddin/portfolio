@@ -1,4 +1,4 @@
-// "use server"
+
 
 
 import React from 'react'
@@ -22,10 +22,10 @@ function Project(props: ProjectData) {
         <div className='flex flex-row-reverse border project justify-between pl-2'>
             <div className='overflow-hidden relative projectImage'>
                 <div className=' absolute max-w-max -bottom-4 -rotate-2  transition left-2 backgroundImage flex justify-center items-center pt-2 pb-2  pl-2 pr-2 rounded'>
-                    <img src={props?.image} alt="" className='rounded' />
+                    <img src={props?.image} alt="" className='rounded hidden md:block' />
                 </div>
             </div>
-            <div className='flex flex-col justify-between w-64'>
+            <div className='flex flex-col justify-between md:w-64'>
                 <div>
                     <div className='projectName'>{props?.projectName}</div>
                     <div>
@@ -45,7 +45,7 @@ function Project(props: ProjectData) {
                         </ul>
                     </div>
                 </div>
-                <div className='mb-4 ml-4 flex flex-row gap-4'><Link href={props?.githubLink} target='_blank' ><GitHubLogoIcon className='h-8 w-8' /> </Link>{props.liveURL && <Link href={props.liveURL} target='_blank'><Link1Icon className='h-8 w-8' /> </Link>}</div>
+                <div className='mb-4 ml-4 mt-4 flex flex-row gap-4'><Link href={props?.githubLink} target='_blank' ><GitHubLogoIcon className='h-8 w-8' /> </Link>{props.liveURL && <Link href={props.liveURL} target='_blank'><Link1Icon className='h-8 w-8' /> </Link>}</div>
             </div>
         </div>
     )

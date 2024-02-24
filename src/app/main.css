@@ -21,3 +21,11 @@
   color: black;
   padding: 4px;
 }
+@media screen and (width<660px) {
+  .arrow{
+    height: auto;
+  }
+  .arrow-2{
+    height: 150px;
+  }
+}
