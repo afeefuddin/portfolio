@@ -19,8 +19,8 @@ export interface ProjectData {
 function Project(props: ProjectData) {
     return (
 
-        <div className='flex flex-row-reverse border project justify-between pl-2'>
-            <div className='overflow-hidden relative projectImage'>
+        <div className='flex flex-row-reverse border project w-[90vw] h-[220px] md:h-[300px] md:w-[700px] md: justify-between pl-2'>
+            <div className='overflow-hidden relative projectImage w-[0px] md:w-[400px]'>
                 <div className=' absolute max-w-max -bottom-4 -rotate-2  transition left-2 backgroundImage flex justify-center items-center pt-2 pb-2  pl-2 pr-2 rounded'>
                     <img src={props?.image} alt="" className='rounded hidden md:block' />
                 </div>
