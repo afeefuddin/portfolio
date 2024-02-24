@@ -35,7 +35,7 @@
         width: 0px;
     }
     .project{
-        width: auto;
+        width: 90vw;
         height: 220px;
         background: hsl( 240 10% 3.9%);
     }
