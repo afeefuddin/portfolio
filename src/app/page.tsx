@@ -22,7 +22,7 @@ export default function Home() {
 
   return (
     <>
-      <section className='min-h-screen' id='home' >
+      <section className='mb-16' id='home' >
         <header className='flex flex-row justify-center p-8 pt-12'>
 
           <div className='w-full flex flex-row-reverse'>
@@ -35,7 +35,7 @@ export default function Home() {
 
         </header>
         <main className="flex flex-col items-center justify-between p-12 pt-24 gap-10 " >
-          <div className='text-5xl md:text-8xl '>Hi,  I am  <span className='coloredText'>Afeef</span></div>
+          <div className='text-4xl md:text-8xl text-center'>Hi,  I am  <span className='coloredText'>Afeef</span></div>
           <div className='text-xl md:text-4xl'>Full stack Developer</div>
           <Button className='h-12 w-40 text-lg ' asChild><a href="https://twitter.com/Afeefuddin2004" target='_blank'>Get In Touch</a></Button>
         </main>
