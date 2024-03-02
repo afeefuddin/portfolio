@@ -54,9 +54,10 @@ export default function Home() {
 
           <div className='text-4xl '>Projects</div>
           <div className=''>
-            <div className='h-[60vh] sticky top-24'><Project projectName='Memomedia' image='/ss.png' projectDescription1="
+            <div className='h-[60vh] sticky top-24'><Project projectName='Memomedia' image='/memomedia.png' projectDescription1="
           A full stack Social Media Website to share memes"
               projectDescription2="Implemented a microservice for OTP verification on signup"
+              liveURL = "https://memomedia.vercel.app/"
               githubLink='https://github.com/afeefuddin/memomedia'
             />
             </div>
