@@ -54,14 +54,30 @@ export default function Home() {
 
           <div className='text-4xl '>Projects</div>
           <div className=''>
-            <div className='h-[60vh] sticky top-24'><Project projectName='Memomedia' image='/memomedia.png' projectDescription1="
+              <div className='text-end text-lg mb-2 text-blue-600 cursor-pointer'>
+                <a href='https://github.com/afeefuddin?tab=repositories' target='_blank'>
+                View All Projects -{'>'}
+                </a>
+                </div>
+            <div className='h-[60vh] sticky top-24'>
+            <Project projectName='Cuddly' image='/cuddly.png' projectDescription1="
+          One stop PetCare and Rehome Solution"
+              projectDescription2="Stored Vector Embedding of 3 Pet related PDFs and used RAG technique to improve Gemini
+              LLMs responses for a Petcare chatbot."
+              liveURL = "https://cuddly-buddy.vercel.app/"
+              githubLink='https://github.com/algovengers/cuddly'
+            />
+            </div>
+            <div className='h-[60vh] sticky top-36 '>
+            <Project projectName='Memomedia' image='/memomedia.png' projectDescription1="
           A full stack Social Media Website to share memes"
               projectDescription2="Implemented a microservice for OTP verification on signup"
               liveURL = "https://memomedia.vercel.app/"
               githubLink='https://github.com/afeefuddin/memomedia'
             />
             </div>
-            <div className='h-[60vh] sticky top-36 '><Project projectName='MindMate' image='/mindmate.png' projectDescription1="A Mental health chatbot that give suggestions and analyse your mental health"
+            <div className='h-[60vh] sticky top-52'>
+            <Project projectName='MindMate' image='/mindmate.png' projectDescription1="A Mental health chatbot that give suggestions and analyse your mental health"
               projectDescription2="Implemented WebSockets For Real Time Communication"
               githubLink='https://github.com/afeefuddin/MindMate'
               liveURL='https://mind-mate-wellness.vercel.app/' />
@@ -74,12 +90,6 @@ export default function Home() {
                 githubLink='https://github.com/afeefuddin/RagFreeCampus'
                 liveURL='https://ragfreecampus.web.app/'
               /></div>
-            <div className='h-[60vh] md:h-[60vh] sticky top-52'>
-              <Project projectName='ASRS' image='/ss.png' projectDescription1="It's a fun project made by me"
-                projectDescription2='Has feature like real dictionary, facts and articles'
-                githubLink='https://github.com/afeefuddin/asrs'
-                liveURL='https://asrs.vercel.app/' />
-            </div>
 
           </div>
         </div>
