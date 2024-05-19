@@ -3,7 +3,6 @@ import Navbar from '@/components/navbar'
 import Image from 'next/image'
 import { Button } from "@/components/ui/button"
 import './main.css'
-import Skills from '@/components/skills'
 import Project from '@/components/project'
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
@@ -15,6 +14,7 @@ import InstaIcon from '@/assets/instagram.svg'
 import LinkedInIcon from '@/assets/linkedin.svg'
 import { ChevronRightIcon } from '@radix-ui/react-icons'
 import About from '@/components/about'
+import Experience from '@/components/experience'
 
 export default function Home() {
   const d = new Date();
@@ -43,17 +43,25 @@ export default function Home() {
       <section id="about">
         <About />
       </section>
-      <section id="skills">
+      {/* <section id="skills">
         <div className='flex justify-center items-center flex-col gap-6 mb-6'>
           <div className='text-4xl'>Skills</div>
           <Skills />
+        </div>
+      </section> */}
+      <section>
+      <div className='flex justify-center items-center flex-col gap-6 mb-6'>
+          <div className='text-4xl'>Experience</div>
+          <div className='max-w-2xl'>
+            <Experience />
+          </div>
         </div>
       </section>
       <section id='projects'>
         <div className='flex justify-center items-center flex-col gap-12 mb-6 mt-6'>
 
           <div className='text-4xl '>Projects</div>
-          <div className=''>
+          <div className='h-full'>
               <div className='text-end text-lg mb-2 text-blue-600 cursor-pointer'>
                 <a href='https://github.com/afeefuddin?tab=repositories' target='_blank'>
                 View All Projects -{'>'}
@@ -76,13 +84,13 @@ export default function Home() {
               githubLink='https://github.com/afeefuddin/memomedia'
             />
             </div>
-            <div className='h-[60vh] sticky top-52'>
+            <div className='h-[60vh] sticky top-48'>
             <Project projectName='MindMate' image='/mindmate.png' projectDescription1="A Mental health chatbot that give suggestions and analyse your mental health"
               projectDescription2="Implemented WebSockets For Real Time Communication"
               githubLink='https://github.com/afeefuddin/MindMate'
               liveURL='https://mind-mate-wellness.vercel.app/' />
             </div>
-            <div className='h-[60vh] sticky top-48'>
+            <div className='h-[60vh] sticky top-60'>
               <Project projectName='RagFreeCampus' image='/ragfreecampus.png' projectDescription1="
              A website to report ragging Incidents.       
              "
@@ -98,7 +106,7 @@ export default function Home() {
       <section className=' flex flex-col items-center gap-6'>
         <h1 className='text-4xl'>Other <span className='coloredText'>Stuffs</span></h1>
         <div>
-          <div>I write blogs <a className=' underline' href='https://afeefexplores.hashnode.dev/' target='_blank'>here</a></div>
+          <div>I write blogs <a className=' underline' href='https://blog.afeefuddin.me/' target='_blank'>here</a></div>
         </div>
       </section>
       <section className='mt-36 flex flex-col items-center gap-6' id='contact'>
