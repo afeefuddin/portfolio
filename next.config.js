@@ -27,6 +27,20 @@ const nextConfig = {
         config.resolve.alias.canvas = false;
         return config
       },
+      async redirects(){
+        return [
+          {
+            source: '/linkedin',
+            destination: 'https://www.linkedin.com/in/afeef-uddin-2ab567247/',
+            permanent: true,
+          },
+          {
+            source: '/resume',
+            destination: 'https://drive.google.com/file/d/1mxpB3T7vzIH0n3b3kaV7akmOO5l3iT9H/view?usp=sharing',
+            permanent: true,
+          }
+        ]
+      }
 }
 
 module.exports = nextConfig

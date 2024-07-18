@@ -47,7 +47,7 @@ function About() {
             </div>
           </div>
           <div className='mt-4'>
-            <a href="https://drive.google.com/file/d/1U5WuTEjejxhb16G-Z88SKnnGQCfVCaQn/view?usp=sharing" target='_blank'><Button variant="outline"  > View Resume</Button></a>
+            <a href="https://drive.google.com/file/d/1mxpB3T7vzIH0n3b3kaV7akmOO5l3iT9H/view?usp=sharing" target='_blank'><Button variant="outline"  > View Resume</Button></a>
           </div>
         </div>
         <div className='hidden justify-center items-center  lg:flex'><Image src={'/aboutPicE.jpeg'} className='rounded' sizes='(max-width:80%),' priority alt='Pic' width='381' height='615' placeholder='blur' quality={100} blurDataURL='/aboutPic.jpeg'></Image></div>
