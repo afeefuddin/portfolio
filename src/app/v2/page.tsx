@@ -5,7 +5,7 @@ import NextLink from "next/link";
 
 export default function V2() {
   return (
-    <div className="bg-[#0E0F10] px-8">
+    <div className="bg-[#0E0F10] px-8 text-sm">
       <div className="max-w-3xl items-center mx-auto w-full py-16  text-gray-300">
         <div>
           <div className="text-lg text-white font-semibold">
