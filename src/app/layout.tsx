@@ -36,51 +36,6 @@ export default function V3Layout({ children }: { children: React.ReactNode }) {
             </div>
 
             <div className="flex-1">{children}</div>
-            <div className="pt-4">
-              <div className="font-bold text-lg md:text-xl">
-                Lets Get in touch
-              </div>
-              <div className="flex flex-col sm:flex-row justify-between sm:items-center">
-                <div className="flex flex-wrap gap-8 p-4">
-                  <Link
-                    href="https://x.com/Afeefuddin2004"
-                    target="_blank"
-                    className="group"
-                  >
-                    <div className="flex items-center gap-1 group-hover:underline">
-                      <div>Twitter</div>
-                      <ArrowTopRightIcon />
-                    </div>
-                  </Link>
-                  <Link
-                    href="https://www.linkedin.com/in/afeef-uddin-2ab567247"
-                    target="_blank"
-                    className="group"
-                  >
-                    <div className="flex items-center gap-1 group-hover:underline">
-                      <div>Linkedin</div>
-                      <ArrowTopRightIcon />
-                    </div>
-                  </Link>
-
-                  <Link
-                    href="https://github.com/afeefuddin"
-                    target="_blank"
-                    className="group"
-                  >
-                    <div className="flex items-center gap-1 group-hover:underline">
-                      <div>Github</div>
-                      <ArrowTopRightIcon />
-                    </div>
-                  </Link>
-                </div>
-                <div className="text-sm text-muted mx-auto sm:mx-0">
-                  <Link href="/yesitchanges">
-                    © {new Date().getFullYear()} Afeefuddin
-                  </Link>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </body>
