@@ -2,26 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.green{
-  --primary: 63 100% 77.5%;
-  --primary-foreground: 0 0% 0%;
-    --secondary: 240 10.7% 10.9%;
-    --secondary-foreground: 0 0% 100%;
-    --text : 356 96% 90%
-}
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
 @layer base {
-  :root{
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+  :root {
+    --background: 0 0% 3.1%;
+    --foreground: 48 24% 96%;
     --card: 144 0% 0%;
     --card-foreground: 144 0% 90%;
     --popover: 144 10% 5%;
     --popover-foreground: 144 0% 90%;
     /* --primary: hsl(var(--primary-color)); */
-   
-    
-    --muted: 106 10% 15%;
+
+
+    --muted: 218 11% 65%;
     --muted-foreground: 144 0% 60%;
     --accent: 240 3.7% 15.9%;
     --accent-foreground: 144 0% 90%;
@@ -43,16 +36,32 @@
   }
 }
 
-body{
-  
-}
 .container {
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
 }
-.container::-webkit-scrollbar { 
-  display: none;  /* Safari and Chrome */
+.container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
-/* .section-banner{
-  background: radial-gradient(45.2% 36.8% at 50% 41.099999999999994%,rgba(59, 131, 246, 0.555) 0%,rgba(0,2,18,0) 100%);
-} */
+
+::selection {
+  background-color: #ffffff13;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #080808;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #080808;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  background: #826d6d36;
+}
