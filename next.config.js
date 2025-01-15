@@ -38,6 +38,16 @@ const nextConfig = {
             source: '/resume',
             destination: 'https://drive.google.com/file/d/1mxpB3T7vzIH0n3b3kaV7akmOO5l3iT9H/view?usp=sharing',
             permanent: true,
+          },
+          {
+            source: '/github',
+            destination: "https://github.com/afeefuddin",
+            permanent: true,
+          },
+          {
+            source: '/blogs',
+            destination: "https://blog.afeefuddin.me",
+            permanent: true
           }
         ]
       }
