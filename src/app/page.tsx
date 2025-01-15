@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ArrowRightIcon, ArrowTopRightIcon } from "@radix-ui/react-icons";
+import Link from "next/link";
 
 function Work({
   h1,
@@ -38,17 +39,27 @@ function Work({
   );
 }
 
-function Project({ name, description }: { name: string; description: string }) {
+function Project({
+  name,
+  description,
+  link,
+}: {
+  name: string;
+  description: string;
+  link: string;
+}) {
   return (
-    <div className="flex group justify-between items-center hover:bg-accent/20 p-2 md:p-4 rounded-lg hover:cursor-pointer gap-1">
-      <div>
-        <div className="font-semibold text-lg">{name}</div>
-        <div className="text-muted">{description}</div>
+    <Link href={link} target="_blank">
+      <div className="flex group justify-between items-center hover:bg-accent/20 p-2 md:p-4 rounded-lg hover:cursor-pointer gap-1">
+        <div>
+          <div className="font-semibold text-lg">{name}</div>
+          <div className="text-muted">{description}</div>
+        </div>
+        <div>
+          <ArrowRightIcon className="transition-transform duration-500 group-hover:-rotate-45" />
+        </div>
       </div>
-      <div>
-        <ArrowRightIcon className="transition-transform duration-500 group-hover:-rotate-45" />
-      </div>
-    </div>
+    </Link>
   );
 }
 
@@ -73,7 +84,9 @@ export default function Portfolio() {
         </div>
       </div>
       <div className="flex flex-col gap-2">
-        <div className="font-bold text-lg md:text-xl">Open Source Contributions</div>
+        <div className="font-bold text-lg md:text-xl">
+          Open Source Contributions
+        </div>
         <div className="flex flex-col">
           <Work
             h1="Zulip"
@@ -89,15 +102,22 @@ export default function Portfolio() {
         <div className="flex flex-col ">
           <Project
             name="Wordoftheminute"
+            link="https://wordoftheminute.pages.dev"
             description="Make your faviourite words the word of the minute"
           />
           <Project
             name="Cuddly"
+            link="https://cuddly-buddy.vercel.app/"
             description="One stop platform for all your pet related problems"
           />
-          <Project name="Jawth" description="A minimalistic JWT library" />
+          <Project
+            name="Jawth"
+            description="A minimalistic JWT library"
+            link="https://www.npmjs.com/package/jawth"
+          />
           <Project
             name="Mindmate"
+            link="https://mind-mate-wellness.vercel.app"
             description="A mental health chatbot with to analyse your mental health"
           />
         </div>
