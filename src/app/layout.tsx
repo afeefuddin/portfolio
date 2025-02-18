@@ -25,7 +25,7 @@ export default function V3Layout({ children }: { children: React.ReactNode }) {
             <div className="flex justify-between w-full py-8">
               <Link href="/">afeef</Link>
               <div className="flex gap-4">
-                <Link href="https://blog.afeefuddin.me" target="_blank">
+                <Link href="https://blog.afeefuddin.com" target="_blank">
                   blogs
                 </Link>
                 <Link href="https://github.com/afeefuddin" target="_blank">
