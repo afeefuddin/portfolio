@@ -28,10 +28,16 @@ export default function V3Layout({ children }: { children: React.ReactNode }) {
                 <Link href="https://blog.afeefuddin.com" target="_blank">
                   blogs
                 </Link>
-                <Link href="https://github.com/afeefuddin" className="hover:underline" target="_blank">
+                <Link
+                  href="https://github.com/afeefuddin"
+                  className="hover:underline"
+                  target="_blank"
+                >
                   github
                 </Link>
-                <Link href="/resume" className="hover:underline">resume</Link>
+                <Link href="/resume" className="hover:underline">
+                  resume
+                </Link>
               </div>
             </div>
             <div className="flex-1">{children}</div>
