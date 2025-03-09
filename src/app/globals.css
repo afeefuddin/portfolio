@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
 @layer base {
   :root {
     --background: 0 0% 3.1%;
@@ -12,7 +12,6 @@
     --popover: 144 10% 5%;
     --popover-foreground: 144 0% 90%;
     /* --primary: hsl(var(--primary-color)); */
-
 
     --muted: 218 11% 65%;
     --muted-foreground: 144 0% 60%;
@@ -24,6 +23,8 @@
     --input: 144 20% 18%;
     --ring: 144 84.1% 58%;
     --radius: 0.5rem;
+
+    --animation-delay: 80ms;
   }
 }
 
@@ -47,8 +48,6 @@
 ::selection {
   background-color: #ffffff13;
 }
-
-
 
 ::-webkit-scrollbar {
   width: 10px;
