@@ -26,6 +26,20 @@
 
     --animation-delay: 80ms;
   }
+  .ghibli-theme {
+    --background: transparent;
+    --card: transparent;
+    --muted-foreground: 73 98% 82%;
+    --muted: 73 98% 82%;
+    --popover: transparent;
+    --accent: 37 82% 72%;
+
+    font-family: "Sawarabi Mincho", serif;
+  }
+
+  .ghibli-theme a:hover {
+    text-decoration: underline;
+  }
 }
 
 @layer base {
