@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
-import { Sawarabi_Mincho } from "next/font/google";
-import Image from "next/image";
 import ThemeWrapper from "@/components/themes-wrapper";
 
 const geistFont = localFont({
@@ -10,9 +8,9 @@ const geistFont = localFont({
   variable: "--font-geist",
 });
 
-const ghibliFont = Sawarabi_Mincho({
-  weight: ["400"],
-  subsets: ["latin"],
+const ghibliFont = localFont({
+  src: "../../public/fonts/sawarabiMincho/SawarabiMincho-Regular.ttf",
+  variable: "--font-sawarbi",
 });
 
 export const metadata: Metadata = {
