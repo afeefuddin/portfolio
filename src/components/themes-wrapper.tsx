@@ -15,7 +15,7 @@ export default function ThemeWrapper({
   geistFont: string;
   ghibliFont: string;
 }) {
-  const [ghibliTheme, setGhibliTheme] = useState(true);
+  const [ghibliTheme, setGhibliTheme] = useState(false);
 
   return (
     <>

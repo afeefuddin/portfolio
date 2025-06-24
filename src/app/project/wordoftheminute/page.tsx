@@ -6,6 +6,7 @@ export default function Wordoftheminute() {
       <Image
         src="/wordoftheminute.png"
         width={10000000}
+        blurDataURL="LXOO3Qof7MWX~of6ngj[9Gay-pj["
         height={10000}
         sizes="100vw"
         style={{ width: "100%", height: "auto" }}
