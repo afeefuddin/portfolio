@@ -12,6 +12,7 @@ export default function Wordoftheminute() {
         style={{ width: "100%", height: "auto" }}
         className="rounded-lg"
         alt="wordoftheminute image"
+        placeholder="blur"
       />
       <div className="animate-text-fade-in flex pt-8 flex-row justify-between items-center">
         <a

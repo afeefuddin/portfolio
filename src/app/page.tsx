@@ -114,21 +114,16 @@ export default function Portfolio() {
           <div className="font-bold md:text-xl">Side Projects</div>
           <div className="flex flex-col ">
             <Project
-              name="Wordoftheminute"
-              blank={false}
-              link="/project/wordoftheminute"
-              description="Make your faviourite words the word of the minute"
-            />
-            <Project
               name="Pyezza"
               blank={false}
               link="/project/pyezza"
               description="A Social Slack Integration Bot"
             />
             <Project
-              name="Cuddly"
-              link="https://cuddly-buddy.vercel.app/"
-              description="One stop platform for all your pet related problems"
+              name="Wordoftheminute"
+              blank={false}
+              link="/project/wordoftheminute"
+              description="Make your faviourite words the word of the minute"
             />
             <Project
               name="Jawth"
@@ -139,6 +134,26 @@ export default function Portfolio() {
               name="Mindmate"
               link="https://mind-mate-wellness.vercel.app"
               description="A mental health chatbot with to analyse your mental health"
+            />
+            <Project
+              name="Http Server in C"
+              link="https://github.com/afeefuddin/express.c"
+              description="A minimal Http Server implementation"
+            />
+            <Project
+              name="ProParse"
+              link="https://github.com/afeefuddin/Proparse"
+              description="A little implementation to parse multipart form data in node.js"
+            />
+            <Project
+              name="ProParse"
+              link="https://github.com/afeefuddin/Proparse"
+              description="A little implementation to parse multipart form data in node.js"
+            />
+            <Project
+              name="Vimwhere"
+              link="https://github.com/afeefuddin/vimwhere"
+              description="Use vim everywhere"
             />
           </div>
         </div>
