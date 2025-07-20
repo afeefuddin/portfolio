@@ -155,7 +155,7 @@ export default function Portfolio() {
       </div>
 
       <div className="pt-4 animate-text-fade-in">
-        <div className="font-bold text-lg md:text-xl">Let's Get in touch</div>
+        <div className="font-bold text-lg md:text-xl">Let&apos;s Get in touch</div>
         <div className="flex flex-col sm:flex-row justify-between sm:items-center">
           <div className="flex flex-wrap gap-8 p-4">
             <Link
