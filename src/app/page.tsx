@@ -131,19 +131,14 @@ export default function Portfolio() {
               link="https://www.npmjs.com/package/jawth"
             />
             <Project
-              name="Mindmate"
-              link="https://mind-mate-wellness.vercel.app"
-              description="A mental health chatbot with to analyse your mental health"
-            />
-            <Project
               name="Http Server in C"
               link="https://github.com/afeefuddin/express.c"
               description="A minimal Http Server implementation"
             />
             <Project
-              name="ProParse"
-              link="https://github.com/afeefuddin/Proparse"
-              description="A little implementation to parse multipart form data in node.js"
+              name="Mindmate"
+              link="https://mind-mate-wellness.vercel.app"
+              description="A mental health chatbot with to analyse your mental health"
             />
             <Project
               name="ProParse"
@@ -160,7 +155,7 @@ export default function Portfolio() {
       </div>
 
       <div className="pt-4 animate-text-fade-in">
-        <div className="font-bold text-lg md:text-xl">Lets Get in touch</div>
+        <div className="font-bold text-lg md:text-xl">Let's Get in touch</div>
         <div className="flex flex-col sm:flex-row justify-between sm:items-center">
           <div className="flex flex-wrap gap-8 p-4">
             <Link
@@ -184,8 +179,8 @@ export default function Portfolio() {
               </div>
             </Link>
 
-            <Link href="https://github.com/afeefuddin" target="_blank">
-              <div className="  flex items-center gap-1 ">
+            <Link href="https://github.com/afeefuddin" target="_blank" className="group">
+              <div className="flex items-center gap-1 group-hover:underline">
                 <div>Github</div>
                 <ArrowTopRightIcon />
               </div>

@@ -53,7 +53,7 @@ export default function ThemeWrapper({
               <Link href="/resume" className="hover:underline">
                 resume
               </Link>
-              <Switch checked={ghibliTheme} onCheckedChange={setGhibliTheme} />
+              {/* <Switch checked={ghibliTheme} onCheckedChange={setGhibliTheme} /> */}
             </div>
           </div>
           <div className="flex-1">{children}</div>
